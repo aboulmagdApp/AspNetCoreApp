@@ -1,0 +1,14 @@
+G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\aspnetcoreNewWeb.deps.json
+G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\aspnetcoreNewWeb.runtimeconfig.json
+G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\aspnetcoreNewWeb.runtimeconfig.dev.json
+G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\aspnetcoreNewWeb.dll
+G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\aspnetcoreNewWeb.pdb
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.csprojAssemblyReference.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.csproj.CoreCompileInputs.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.RazorAssemblyInfo.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.RazorAssemblyInfo.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.AssemblyInfoInputs.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.AssemblyInfo.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.RazorTargetAssemblyInfo.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.dll
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.pdb
