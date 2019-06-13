@@ -32,23 +32,10 @@ namespace aspnetcoreNewWeb
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.Use(async (context,next) =>
-             {
-               logger.LogInformation("MW1: Incoming Request");
-                await next();
-                logger.LogInformation("MW1: Out going Response");
-             });
-             app.Use(async (context,next) =>
-             {
-               logger.LogInformation("MW2: Incoming Request");
-                await next();
-                logger.LogInformation("MW2: Out going Response");
-             });
+            app.UseStaticFiles();
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("MW3: Request handled and response produced");
-                 logger.LogInformation("MW3: Request handled and response produced");
+                await context.Response.WriteAsync("Hello world");
             });
         }
     }
