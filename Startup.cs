@@ -30,6 +30,11 @@ namespace aspnetcoreNewWeb
         {
             if (env.IsDevelopment())
             {
+                DeveloperExceptionPageOptions  developerExceptionPageOptions = new DeveloperExceptionPageOptions()
+                {
+                        SourceCodeLineCount = 1
+
+                };
                 app.UseDeveloperExceptionPage();
             }
             FileServerOptions  fileServerOptions = new FileServerOptions();
@@ -40,6 +45,7 @@ namespace aspnetcoreNewWeb
 
             app.Run(async (context) =>
             {
+                throw new Exception("some error processing in the request");
                 await context.Response.WriteAsync("Hello world");
             });
         }
