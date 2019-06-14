@@ -1,10 +1,8 @@
 @model IEnumerable<aspnetcoreNewWeb.Models.Employee>
-    <html>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
+    @{
+            Layout = "~/Views/Shared/_Layout.cshtml";
+            ViewBag.Title = "Employee List";
+    }
  <table>
      <thead>
          <tr>
@@ -24,5 +22,3 @@
          }
      </tbody>
  </table>
-    </body>
-</html>
