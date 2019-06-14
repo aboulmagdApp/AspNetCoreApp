@@ -12,3 +12,12 @@ G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.RazorTargetAssemblyInfo.cache
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.dll
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.pdb
+G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\aspnetcoreNewWeb.Views.dll
+G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\aspnetcoreNewWeb.Views.pdb
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.TagHelpers.input.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.TagHelpers.output.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.RazorCoreGenerate.cache
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Details.g.cshtml.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.RazorTargetAssemblyInfo.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.Views.pdb
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.csproj.CopyComplete
