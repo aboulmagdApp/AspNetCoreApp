@@ -1,4 +1,5 @@
 using aspnetcoreNewWeb.Models;
+using aspnetcoreNewWeb.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace aspnetcoreNewWeb.Controllers
@@ -16,9 +17,12 @@ namespace aspnetcoreNewWeb.Controllers
         }
         public ViewResult Details()
         {
-            Employee model = _employeeRepository.GetEmployee(1);
-            ViewBag.pageTitle = "Employee Details";
-            return View(model);
+            HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
+            {
+                Employee = _employeeRepository.GetEmployee(1),
+                PageTitle = "Employee Details"
+            };
+            return View(homeDetailsViewModel);
         }
     }
 }
