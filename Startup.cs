@@ -30,12 +30,9 @@ namespace aspnetcoreNewWeb
         {
             if (env.IsDevelopment())
             {
-                DeveloperExceptionPageOptions  developerExceptionPageOptions = new DeveloperExceptionPageOptions()
-                {
-                        SourceCodeLineCount = 1
-
-                };
-                app.UseDeveloperExceptionPage();
+                DeveloperExceptionPageOptions  developerExceptionPageOptions = new DeveloperExceptionPageOptions();
+                developerExceptionPageOptions.SourceCodeLineCount = 1;
+                app.UseDeveloperExceptionPage(developerExceptionPageOptions);
             }
             FileServerOptions  fileServerOptions = new FileServerOptions();
             fileServerOptions.DefaultFilesOptions.DefaultFileNames.Clear();
