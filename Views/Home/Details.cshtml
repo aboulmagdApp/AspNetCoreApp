@@ -1,4 +1,4 @@
-<!DOCTYPE>
+@Model aspnetcoreNewWeb.Models.Employee
 <html>
     <head>
         <meta charset="utf-8">
@@ -8,16 +8,16 @@
         <h3>@ViewBag.pageTitle</h3>
        
         <div>
-            Id : @ViewBag.Employee.Id
+            Id : @Model.Id
         </div>
          <div>
-            Name : @ViewBag.Employee.Name
+            Name : @Model.Name
         </div>
          <div>
-            Email : @ViewBag.Employee.Email
+            Email : @Model.Email
         </div>
          <div>
-            Department : @ViewBag.Employee.Department
+            Department : @Model.Department
         </div>
     </body>
 </html>
