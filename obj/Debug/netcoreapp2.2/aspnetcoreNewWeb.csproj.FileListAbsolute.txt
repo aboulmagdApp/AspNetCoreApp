@@ -21,3 +21,4 @@ G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.RazorTargetAssemblyInfo.cs
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.Views.pdb
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\aspnetcoreNewWeb.csproj.CopyComplete
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
