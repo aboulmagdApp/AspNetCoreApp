@@ -11,9 +11,9 @@ namespace aspnetcoreNewWeb.Models
         {
             _employeeList = new List<Employee>()
             {
-                    new Employee(){Id=1,Name="Mary",Email="mary@live.com"},
-                    new Employee(){Id=2,Name="aboulmagd",Email="aboulmagd@live.com"},
-                    new Employee(){Id=3,Name="hany",Email="hany@live.com"}
+                    new Employee(){Id=1,Name="Mary",Email="mary@live.com",Department="Hr"},
+                    new Employee(){Id=2,Name="aboulmagd",Email="aboulmagd@live.com",Department="It"},
+                    new Employee(){Id=3,Name="hany",Email="hany@live.com",Department="Pyrol"}
             };
         }
         public Employee GetEmployee(int id)
