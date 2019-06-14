@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using aspnetcoreNewWeb.Models;
 
 namespace aspnetcoreNewWeb
 {
@@ -23,6 +24,7 @@ namespace aspnetcoreNewWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -31,14 +33,14 @@ namespace aspnetcoreNewWeb
         {
             if (env.IsDevelopment())
             {
-               app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();
             }
-            
+
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
             app.Run(async (context) =>
             {
-               await context.Response.WriteAsync("Hellow World!");
+                await context.Response.WriteAsync("Hellow World!");
             });
         }
     }
