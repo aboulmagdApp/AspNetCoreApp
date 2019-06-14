@@ -17,8 +17,8 @@ namespace aspnetcoreNewWeb.Controllers
         public ViewResult Details()
         {
             Employee model = _employeeRepository.GetEmployee(1);
-            ViewData["Employee"] = model;
-            ViewData["pageTitle"] = "Employee Details";
+            ViewBag.Employee = model;
+            ViewBag.pageTitle = "Employee Details";
             return View();
         }
     }
