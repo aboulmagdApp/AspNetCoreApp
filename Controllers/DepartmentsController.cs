@@ -2,17 +2,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace aspnetcoreNewWeb.Controllers
 {
-    [Route("Departments")]
+    [Route("[Controller]")]
     public class DepartmentsController : Controller
 {
     [Route("")]
-    [Route("List")]
+    [Route("[action]")]
     public string List()
     {
         return "List() of DepartmentsController";
     }
 
-    [Route("Details")]
+    [Route("[action]")]
     public string Details()
     {
         return "Details() of DepartmentsController";
