@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "g:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj": {}
+    "G:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj": {}
   },
   "projects": {
-    "g:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj": {
+    "G:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "g:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj",
+        "projectUniqueName": "G:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj",
         "projectName": "aspnetcoreNewWeb",
-        "projectPath": "g:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj",
+        "projectPath": "G:\\Learning\\google_dev\\aspnetcoreNewWeb\\aspnetcoreNewWeb.csproj",
         "packagesPath": "C:\\Users\\Magd\\.nuget\\packages\\",
-        "outputPath": "g:\\Learning\\google_dev\\aspnetcoreNewWeb\\obj\\",
+        "outputPath": "G:\\Learning\\google_dev\\aspnetcoreNewWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
