@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace aspnetcoreNewWeb.Controllers
 {
-    [Route("[Controller]")]
+   
     public class HomeController : Controller
     {
         private IEmployeeRepository _employeeRepository;
@@ -13,15 +13,13 @@ namespace aspnetcoreNewWeb.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        [Route("")]
-        [Route("[action]")]
-        [Route("~/")]
+        
         public ViewResult Index()
         {
             var model = _employeeRepository.GetAllEmployee();
             return View(model);
         }
-        [Route("[action]/{id?}")]
+        
         public ViewResult Details(int? id)
         {
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
