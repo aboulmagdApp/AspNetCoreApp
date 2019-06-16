@@ -2943,6 +2943,11 @@
   "RootNamespace": "aspnetcoreNewWeb",
   "Documents": [
     {
+      "FilePath": "Views\\Home\\Create.cshtml",
+      "TargetPath": "Views\\Home\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

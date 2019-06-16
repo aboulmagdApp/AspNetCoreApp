@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -11,10 +10,17 @@ namespace aspnetcoreNewWeb.Models
         {
             _employeeList = new List<Employee>()
             {
-                    new Employee(){Id=1,Name="Mary",Email="mary@live.com",Department="Hr"},
-                    new Employee(){Id=2,Name="aboulmagd",Email="aboulmagd@live.com",Department="It"},
-                    new Employee(){Id=3,Name="hany",Email="hany@live.com",Department="Pyrol"}
+                    new Employee(){Id=1,Name="Mary",Email="mary@live.com",Department=Dept.HR},
+                    new Employee(){Id=2,Name="aboulmagd",Email="aboulmagd@live.com",Department=Dept.Payroll},
+                    new Employee(){Id=3,Name="hany",Email="hany@live.com",Department=Dept.IT}
             };
+        }
+
+        public Employee Add(Employee employee)
+        {
+         employee.Id = _employeeList.Max(e => e.Id) + 1;
+        _employeeList.Add(employee);
+        return employee;
         }
 
         public IEnumerable<Employee> GetAllEmployee()
