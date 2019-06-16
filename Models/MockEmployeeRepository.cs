@@ -18,9 +18,19 @@ namespace aspnetcoreNewWeb.Models
 
         public Employee Add(Employee employee)
         {
-         employee.Id = _employeeList.Max(e => e.Id) + 1;
-        _employeeList.Add(employee);
-        return employee;
+            employee.Id = _employeeList.Max(e => e.Id) + 1;
+            _employeeList.Add(employee);
+            return employee;
+        }
+
+        public Employee Delete(int Id)
+        {
+            Employee employee = _employeeList.FirstOrDefault(e => e.Id == Id);
+            if (employee != null)
+            {
+                _employeeList.Remove(employee);
+            }
+            return employee;
         }
 
         public IEnumerable<Employee> GetAllEmployee()
@@ -31,6 +41,18 @@ namespace aspnetcoreNewWeb.Models
         public Employee GetEmployee(int id)
         {
             return _employeeList.FirstOrDefault(e => e.Id == id);
+        }
+
+        public Employee Update(Employee employeeChanges)
+        {
+            Employee employee = _employeeList.FirstOrDefault(e => e.Id == employeeChanges.Id);
+            if (employee != null)
+            {
+                employee.Name = employeeChanges.Name;
+                employee.Email = employeeChanges.Email;
+                employee.Department = employeeChanges.Department;
+            }
+            return employee;
         }
     }
 }
