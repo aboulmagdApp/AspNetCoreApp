@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using aspnetcoreNewWeb.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace aspnetcoreNewWeb
 {
@@ -18,6 +19,7 @@ namespace aspnetcoreNewWeb
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
             services.AddMvc();
             services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
         }
