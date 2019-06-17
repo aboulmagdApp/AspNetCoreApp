@@ -26,3 +26,4 @@ G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shar
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.g.cshtml.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs

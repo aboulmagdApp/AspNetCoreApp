@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using aspnetcoreNewWeb.Models;
 using Microsoft.AspNetCore.Http;
@@ -15,6 +16,6 @@ namespace aspnetcoreNewWeb.ViewModels
         public string Email { get; set; }
         [Required]
         public Dept? Department { get; set; }
-        public IFormFile Photo { get; set; }
+        public List<IFormFile> Photos { get; set; }
     }
 }
