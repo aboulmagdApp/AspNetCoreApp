@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using aspnetcoreNewWeb.Models;
 
 namespace aspnetcoreNewWeb.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190617065249_seedEmployees")]
+    partial class seedEmployees
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -43,28 +45,7 @@ namespace aspnetcoreNewWeb.Migrations
                             Id = 1,
                             Department = 3,
                             Email = "aboulmagd@live.com",
-                            Name = "Mohamed aboulmagd"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Department = 2,
-                            Email = "Ahmed@Outlook.com",
-                            Name = "Ahmed Hossam"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Department = 1,
-                            Email = "shadi@gmail.com",
-                            Name = "shadi hussan"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Department = 3,
-                            Email = "Eman@gmail.com",
-                            Name = "Eman Abdallah"
+                            Name = "aboulmagd"
                         });
                 });
 #pragma warning restore 612, 618
