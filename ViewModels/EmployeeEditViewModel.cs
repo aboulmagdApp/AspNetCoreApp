@@ -1,6 +1,4 @@
-using aspnetcoreNewWeb.ViewModels;
-
-namespace aspnetcoreNewWeb.Models
+namespace aspnetcoreNewWeb.ViewModels
 {
     public class EmployeeEditViewModel : EmployeeCreateViewModel
     {
