@@ -32,3 +32,4 @@ G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shar
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
 G:\Learning\google_dev\aspnetcoreNewWeb\bin\Debug\netcoreapp2.2\nlog.config
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
