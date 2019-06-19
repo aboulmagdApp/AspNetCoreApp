@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using aspnetcoreNewWeb.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace aspnetcoreNewWeb
 {
@@ -20,6 +21,8 @@ namespace aspnetcoreNewWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                    .AddEntityFrameworkStores<AppDbContext>();
             services.AddMvc();
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
@@ -39,11 +42,12 @@ namespace aspnetcoreNewWeb
             }
 
             app.UseStaticFiles();
-          //  app.UseMvcWithDefaultRoute();
-          app.UseMvc(routes =>{
-              routes.MapRoute("default","{controller=Home}/{action=Index}/{id?}");
-          });
-      
+            app.UseAuthentication();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
+            });
+
         }
     }
 }
