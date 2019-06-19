@@ -2943,6 +2943,11 @@
   "RootNamespace": "aspnetcoreNewWeb",
   "Documents": [
     {
+      "FilePath": "Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\Home\\Create.cshtml",
       "TargetPath": "Views\\Home\\Create.cshtml",
       "FileKind": "mvc"
@@ -2953,8 +2958,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views\\Shared\\NotFound.cshtml",
+      "TargetPath": "Views\\Shared\\NotFound.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views\\Home\\EmployeeNotFound.cshtml",
+      "TargetPath": "Views\\Home\\EmployeeNotFound.cshtml",
       "FileKind": "mvc"
     },
     {

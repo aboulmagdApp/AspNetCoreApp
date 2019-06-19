@@ -32,6 +32,11 @@ namespace aspnetcoreNewWeb
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            }
 
             app.UseStaticFiles();
           //  app.UseMvcWithDefaultRoute();

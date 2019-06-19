@@ -27,3 +27,6 @@ G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\_Vie
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.g.cshtml.cs
 G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\Edit.g.cshtml.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.g.cshtml.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.g.cshtml.cs
+G:\Learning\google_dev\aspnetcoreNewWeb\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
