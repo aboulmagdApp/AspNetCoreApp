@@ -1,13 +1,17 @@
 using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
 
 namespace aspnetcoreNewWeb.Models
 {
     public class SQLEmployeeRepository : IEmployeeRepository
     {
         private readonly AppDbContext context;
-        public SQLEmployeeRepository(AppDbContext context)
+        private readonly ILogger<SQLEmployeeRepository> logger;
+        public SQLEmployeeRepository(AppDbContext context,
+                                    ILogger<SQLEmployeeRepository> logger)
         {
             this.context = context;
+            this.logger = logger;
         }
         public Employee Add(Employee employee)
         {
@@ -19,7 +23,7 @@ namespace aspnetcoreNewWeb.Models
         public Employee Delete(int Id)
         {
             Employee employee = context.Employees.Find(Id);
-           if (employee != null)
+            if (employee != null)
             {
                 context.Employees.Remove(employee);
                 context.SaveChanges();
@@ -34,6 +38,12 @@ namespace aspnetcoreNewWeb.Models
 
         public Employee GetEmployee(int id)
         {
+            logger.LogTrace("Trace Log");
+            logger.LogDebug("Debug Log");
+            logger.LogInformation("Information Log");
+            logger.LogWarning("Warning Log");
+            logger.LogError("Error Log");
+            logger.LogCritical("Critical Log");
             return context.Employees.Find(id);
         }
 

@@ -4,6 +4,7 @@ using aspnetcoreNewWeb.Models;
 using aspnetcoreNewWeb.ViewModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace aspnetcoreNewWeb.Controllers
 {
@@ -12,11 +13,14 @@ namespace aspnetcoreNewWeb.Controllers
     {
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IHostingEnvironment hostingEnvironment;
+        private readonly ILogger<HomeController> logger;
         public HomeController(IEmployeeRepository employeeRepository,
-                              IHostingEnvironment hostingEnvironment)
+                              IHostingEnvironment hostingEnvironment,
+                              ILogger<HomeController> logger)
         {
             _employeeRepository = employeeRepository;
             this.hostingEnvironment = hostingEnvironment;
+            this.logger = logger;
         }
 
 
@@ -28,11 +32,19 @@ namespace aspnetcoreNewWeb.Controllers
 
         public ViewResult Details(int? id)
         {
-            throw new Exception("Error in Detail view");
+            // throw new Exception("Error in Detail view");
+            logger.LogTrace("Trace Log");
+            logger.LogDebug("Debug Log");
+            logger.LogInformation("Information Log");
+            logger.LogWarning("Warning Log");
+            logger.LogError("Error Log");
+            logger.LogCritical("Critical Log");
+
             Employee employee = _employeeRepository.GetEmployee(id.Value);
-            if(employee == null){
+            if (employee == null)
+            {
                 Response.StatusCode = 404;
-                return View("EmployeeNotFound",id.Value);
+                return View("EmployeeNotFound", id.Value);
             }
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
@@ -69,7 +81,7 @@ namespace aspnetcoreNewWeb.Controllers
                 employee.Name = model.Name;
                 employee.Email = model.Email;
                 employee.Department = model.Department;
-               // string uniqueFileName = ProcessUploadedFile(model);
+                // string uniqueFileName = ProcessUploadedFile(model);
                 if (model.Photo != null)
                 {
                     if (model.ExistingPhotoPath != null)
