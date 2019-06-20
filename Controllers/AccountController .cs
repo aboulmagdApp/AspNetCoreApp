@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using aspnetcoreNewWeb.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,7 @@ namespace aspnetcoreNewWeb.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
@@ -29,6 +31,7 @@ namespace aspnetcoreNewWeb.Controllers
             return RedirectToAction("index", "home");
         }
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
@@ -47,13 +50,15 @@ namespace aspnetcoreNewWeb.Controllers
             }
             return View(model);
         }
-                [HttpGet]
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (ModelState.IsValid)

@@ -6,6 +6,8 @@ using Microsoft.Extensions.Logging;
 using aspnetcoreNewWeb.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 namespace aspnetcoreNewWeb
 {
@@ -27,7 +29,13 @@ namespace aspnetcoreNewWeb
             options.Password.RequiredUniqueChars = 3;
         })
             .AddEntityFrameworkStores<AppDbContext>();
-            services.AddMvc();
+            //for implement Authorize users in all controller in our app
+            services.AddMvc(options =>{
+                        var policy = new AuthorizationPolicyBuilder()
+                        .RequireAuthenticatedUser()
+                        .Build();
+                         options.Filters.Add(new AuthorizeFilter(policy));
+            }).AddXmlSerializerFormatters();
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
 
