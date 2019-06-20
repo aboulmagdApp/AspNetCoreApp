@@ -23,12 +23,14 @@ namespace aspnetcoreNewWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContextPool<AppDbContext>(options => options.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
+            
             services.AddIdentity<IdentityUser, IdentityRole>(options =>
-        {
-            options.Password.RequiredLength = 10;
-            options.Password.RequiredUniqueChars = 3;
-        })
+            {
+                options.Password.RequiredLength = 10;
+                options.Password.RequiredUniqueChars = 3;
+            })
             .AddEntityFrameworkStores<AppDbContext>();
+
             //for implement Authorize users in all controller in our app
             services.AddMvc(options =>{
                         var policy = new AuthorizationPolicyBuilder()
@@ -36,6 +38,7 @@ namespace aspnetcoreNewWeb
                         .Build();
                          options.Filters.Add(new AuthorizeFilter(policy));
             }).AddXmlSerializerFormatters();
+            
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
 
