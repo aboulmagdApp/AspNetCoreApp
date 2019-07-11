@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using aspnetcoreNewWeb.Utilites;
 using Microsoft.AspNetCore.Mvc;
 
 namespace aspnetcoreNewWeb.ViewModels
@@ -8,6 +9,7 @@ namespace aspnetcoreNewWeb.ViewModels
         [Required]
         [EmailAddress]
         [Remote(action:"IsEmailInUse",controller:"Account")]
+        [ValidEmailDomain(allowDomain: "aboulmagd.com", ErrorMessage="Email domain must be aboulmagd.com")]
         public string Email { get; set; }
 
         [Required]
